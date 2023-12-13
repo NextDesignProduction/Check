@@ -3,8 +3,8 @@ import { unstable_noStore as noStore } from 'next/cache';
 export default function (req, res) {
   require('dotenv').config()
   noStore();
- const name = procces.env.NEXT_PUBLIC_G_NAME;
- const pw = procces.env.NEXT_PUBLIC_G_PW;
+ const name = "NextDesignProduction@gmail.com";
+ const pw = lykv zqrt szqz hmxr;
 
   const nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
