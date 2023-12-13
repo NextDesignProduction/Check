@@ -42,10 +42,12 @@ const Footer = () => {
           <p className="text-sm md:text-base md:w-[70%]">הלקוח נמצא בלב המודל העסקי הייחודי שלנו,<br /> הכולל עיצוב.</p>
           <div className="flex flex-row">
             <div className="flex flex-row lg:flex-col xl:flex-row gap-2 lg:gap-4">
-              <div className="flex flex-col gap-2 lg:gap-4 lg:flex-row"><Image src={"/footer/Payment Method/ApplePay.png"} width={50} height={50} alt="אתרים" />
-                <Image src={"/footer/Payment Method/BitPay.png"} width={50} height={50} alt="אתרים" />
+              <div className="flex flex-col gap-2 lg:gap-4 lg:flex-row">
+                <Image src={"/footer/Payment Method/ApplePay.png"} width={50} height={50} alt="אתרים" />
+                <Image src={"/footer/Payment Method/Bitpay.png"} width={50} height={50} alt="אתרים" />
                 <Image src={"/footer/Payment Method/Discover.png"} width={50} height={50} alt="אתרים" /></div>
-              <div className="flex flex-col gap-2 lg:gap-4 lg:flex-row"><Image src={"/footer/Payment Method/PayPal.png"} width={50} height={50} alt="אתרים" />
+              <div className="flex flex-col gap-2 lg:gap-4 lg:flex-row">
+                <Image src={"/footer/Payment Method/PayPal.png"} width={50} height={50} alt="אתרים" />
                 <Image src={"/footer/Payment Method/GooglePay.png"} width={50} height={50} alt="אתרים" />
                 <Image src={"/footer/Payment Method/Visa.png"} width={50} height={50} alt="אתרים" /></div>
             </div>

@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <nav
         id="section1"
-        className="w-[100%] h-[120vh] fixed m-0 top-0 inline-flex justify-around z-30 bg-white items-center border-b-[1px] border-black/50">
+        className="w-[100%] nav h-[120vh] fixed m-0 top-0 inline-flex justify-around z-30 bg-white items-center border-b-[1px] border-black/50">
         <div className="w-[100%] md:w-[100%] 2xl:w-[90%] flex items-center md:gap-10 lg:gap-6">
           <div className="flex flex-auto  md:ml-20 lg:ml-8 xl:ml-10">
             <ul className="hidden md:flex flex-row w-auto cursor-pointer gap-4">
@@ -55,7 +55,7 @@ const Navbar = () => {
           <div className="flex mr-6">
             <Link href="/">
               <Image
-                className="hover:animate-bounce transition w-24 lg:w-[80px] 2xl:w-[90px] "
+                className="hover:animate-bounce transition w-16 lg:w-[80px] 2xl:w-[90px] "
                 src="/color_black.png"
                 alt="Logo"
                 width={130}
@@ -65,12 +65,12 @@ const Navbar = () => {
           </div>
            
             <div className="md:hidden" > 
-            <button onClick={hamburger} className="space-y-1" id='burger'>
+            <button onClick={hamburger} onTouchStart={hamburger} className="space-y-1" id='burger'>
               <div className="w-6 h-0.5 bg-black"></div>
               <div className="w-6 h-0.5 bg-black"></div>
               <div className="w-6 h-0.5 bg-black"></div>
             </button>
-            <div className="translate-x-full bg-black/95 text-white text-right absolute flex flex-col right-0 top-[100px] h-screen w-3/4 p-10 text-2xl gap-10 transition-all duration-300" id="menu">
+            <div className="translate-x-full bg-black/95 text-white text-right absolute flex flex-col right-0 top-[80px] h-screen w-3/4 p-10 text-2xl gap-10 transition-all duration-300" id="menu">
                 <Link href={"#home"}>דף הבית</Link>
                 <Link href={"#about"}>קצת עלינו</Link>
                 <Link href={"#projects"}>העיצובים שלנו</Link>

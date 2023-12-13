@@ -59,7 +59,6 @@ const handleSubmit = (e:any) => {
             <div className="relative w-full md:w-2/4 border-none md:border-l flexCenter flex-col md:mt-24 md:mb-24">
               <h1 className="2xl:ml-12 font-sans text-[#700124]">יצירת קשר</h1>
               <form
-
                 onSubmit={handleSubmit}
                 className="md:mt-5 flex-col w-2/4 flex justify-center items-center"
               >
@@ -125,6 +124,7 @@ const handleSubmit = (e:any) => {
                 <button
                   type="submit"
                   onClick={(e)=>{handleSubmit(e)}}
+                  onTouchStart={(e)=>{handleSubmit(e)}}
                   className="rounded-3xl p-1 bg-[#700124] border-black/30 border w-[180px] h-[40px] font-sans font-bold mt-5 mb-5 hover:opacity-90 transition-all flex items-center gap-2 text-white justify-end"
                 >
                   <p id="p">שלח</p>

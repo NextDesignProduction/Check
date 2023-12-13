@@ -43,7 +43,7 @@ const Deal = () => {
           {/* First rectangle div - NEHITA */}
           <div className="flex flex-col items-center text-center">
             <div>
-              <button onClick={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-xl">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">דף <br />נחיתה</p>
                 <div className="">
                     <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מספר עמודים</p></div>
@@ -71,7 +71,7 @@ const Deal = () => {
           {/* Second rectangle div - TADMIT */}
           <div className="flex flex-col items-center text-center">
             <div>
-              <button onClick={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">אתר <br />תדמית</p>
 
                 <div>
@@ -99,7 +99,7 @@ const Deal = () => {
           {/* Third rectangle div - MEHIROT */}
           <div className="flex flex-col items-center text-center">
             <div>
-              <button onClick={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">אתר <br />מכירות</p>
 
                 <div className="">
