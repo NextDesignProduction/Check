@@ -4,7 +4,7 @@ export default function (req, res) {
   require('dotenv').config()
   noStore();
  const name = "NextDesignProduction@gmail.com";
- const pw = lykv zqrt szqz hmxr;
+ const pw = "lykv zqrt szqz hmxr";
 
   const nodemailer = require('nodemailer')
   const transporter = nodemailer.createTransport({
