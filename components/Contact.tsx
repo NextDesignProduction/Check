@@ -43,9 +43,48 @@ const handleSubmit = (e:any) => {
 }else{
   
   setName('You must fill this line to get us in contact')
+}
+
+const handleTouchEvent = (e: any) => {
+  e.preventDefault();
+  if(name != "" && email != "" && pnumber != "" && message != "")
+  {
+  console.log('Sending')
+  let data = {
+    name,
+    email,
+    pnumber,
+    message
+  }
+  console.log(data)
+  fetch('/api/contact', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json, text/plain, */*',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  }).then((res) => {
+    console.log('Response received')
+    if (res.status === 200) {
+      console.log('Response succeeded!')
+      setSubmitted(true)
+      setName('')
+      setEmail('')
+      setPnumber('')
+      setMessage('')
+    }
+  })
+}else{
   
+  setName('You must fill this line to get us in contact')
 }
 }
+}
+
+  function handleTouchEvent(e: React.TouchEvent<HTMLButtonElement>) {
+    throw new Error("Function not implemented.");
+  }
 
   return (
     <section
@@ -124,7 +163,7 @@ const handleSubmit = (e:any) => {
                 <button
                   type="submit"
                   onClick={(e)=>{handleSubmit(e)}}
-                  onTouchStart={(e)=>{handleSubmit(e)}}
+                  onTouchStart={(e)=>{handleTouchEvent(e)}}
                   className="rounded-3xl p-1 bg-[#700124] border-black/30 border w-[180px] h-[40px] font-sans font-bold mt-5 mb-5 hover:opacity-90 transition-all flex items-center gap-2 text-white justify-end"
                 >
                   <p id="p">שלח</p>
