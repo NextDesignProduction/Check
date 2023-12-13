@@ -1,0 +1,51 @@
+{
+  "name": "main_web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+
+
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lottiefiles/lottie-player": "^2.0.2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^0.9.437",
+    "@stitches/react": "^1.2.8",
+    "@types/node": "20.4.8",
+    "@types/react": "18.2.18",
+    "@types/react-dom": "18.2.7",
+    "aos": "^2.3.4",
+    "autoprefixer": "10.4.14",
+    "dotenv": "^16.3.1",
+    "framer-motion": "^10.16.2",
+    "lottie-to-svg": "^1.1.0",
+    "lottie-web": "^5.12.2",
+    "mongoose": "^7.4.3",
+    "next": "^13.5.2",
+    "nodemailer": "^6.9.7",
+    "postcss": "^8.4.32",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-easy-swipe": "^0.0.23",
+    "react-icons": "^4.10.1",
+    "react-scroll": "^1.8.9",
+    "swiper": "^10.2.0",
+    "tailwindcss": "3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
+    "@types/aos": "^3.0.4",
+    "@types/nodemailer": "^6.4.14",
+    "daisyui": "^3.6.3"
+  }
+}
