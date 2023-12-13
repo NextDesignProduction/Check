@@ -24,7 +24,7 @@ const Welcome = () => {
            </div>
            <motion.div initial={{y:-300, opacity:0, scale:0}} transition={{delay:3.7, duration:0.5}} animate={{y:0, opacity:1, scale:1}} className="flexCenter">
              <Image
-               src="/devices.png"
+               src="/Devices.png"
                alt="welcome"
                width={1200}
                height={400}
