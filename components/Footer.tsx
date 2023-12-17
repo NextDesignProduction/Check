@@ -1,4 +1,4 @@
-'use client';
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -37,7 +37,8 @@ const Footer = () => {
   }
 
   return (
-    <footer dir="rtl" className="w-full h-[48vh] items-center justify-evenly bg-black flex flex-col">
+    <>
+    <footer dir="rtl" className="w-full h-[62vh] md:h-[48vh] items-center justify-evenly bg-black flex flex-col">
       <div className="flex w-full h-full flex-row justify-around items-center">
         <div className="w-2/4 md:w-1/4 2xl:w-[30%] flex flex-col gap-8">
           <div className="flex flex-row"><h1 className="text-xl md:text-4xl"> נקסט דיזיין</h1>
@@ -107,6 +108,7 @@ const Footer = () => {
       </div>
 
     </footer>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div>
+    <>
     <div className="z-50">
     <div className="loading-page">
     <svg id="svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
@@ -13,7 +13,8 @@ const Intro = () => {
       </div>
     </div>
     </div>
-    </div></div>
+    </div>
+    </>
   )
 }
 

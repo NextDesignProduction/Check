@@ -30,7 +30,7 @@ const handleSubmit = (e:any) => {
     },
     body: JSON.stringify(data)
   }).then((res) => {
-    console.log('Response received' + res)
+    console.log('Response received')
     if (res.status === 200) {
       console.log('Response succeeded!')
       setSubmitted(true)
