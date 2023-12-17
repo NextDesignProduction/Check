@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 const Deal = () => {
@@ -43,9 +44,9 @@ const Deal = () => {
           {/* First rectangle div - NEHITA */}
           <div className="flex flex-col items-center text-center">
             <div>
-              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-xl">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90  transition-all duration-700  cursor-pointer focus:bg-[#700124] shadow-lg shadow-black focus:shadow-2xl  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">דף <br />נחיתה</p>
-                <div className="">
+                <div className="pt-2 md:pt-0">
                     <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מספר עמודים</p></div>
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4 " >1</p>
                     <div className="border-b border-black md:hidden"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מעצב מקצועי</p></div>
@@ -60,9 +61,12 @@ const Deal = () => {
                     <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">אבטחה</p></div>
 
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-5 "  >ללא אבטחה</p>
-                    <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מחיר</p></div>
-
-                  <p id="color1" className="transition-all duration-500 text-red-900 font-bold w-full text-lg md:pt-4"><span className="hidden">החל</span>  מ-700₪</p>
+                    <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מחיר</p></div> 
+                    <div className="w-full h-full">
+                      <Link href={"#contact"}>
+                    <button
+                    className="self-end text-base text-[#700124] transition-all duration-500 w-full hidden md:hidden md:pt-3 hover:scale-110">צרו איתנו קשר</button></Link>
+            </div>  
                 </div>
               </button>
 
@@ -70,13 +74,13 @@ const Deal = () => {
           </div>
           {/* Second rectangle div - TADMIT */}
           <div className="flex flex-col items-center text-center">
-            <div>
-              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
+            <div className="">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90  transition-all duration-700 cursor-pointer focus:bg-[#700124] shadow-lg shadow-black focus:shadow-2xl  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">אתר <br />תדמית</p>
 
-                <div>
+                <div className="pt-2 md:pt-0">
                     <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מספר עמודים</p></div>
-                  <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4 ">4+</p>
+                  <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4">4+</p>
                     <div className="border-b border-black md:hidden "><p className="transition-all duration-500 text-black w-full font-bold p-[1px]">מעצב מקצועי</p></div>
 
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-5">כלול</p>
@@ -90,8 +94,6 @@ const Deal = () => {
 
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4" >מינימלי</p>
                     <div className="border-b border-black md:hidden pt-1 "><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מחיר</p></div>
-
-                  <p id="color1" className="transition-all duration-500 text-red-900 font-bold w-full  text-lg md:pt-5">מ-3000₪</p>
                 </div>
               </button>
             </div>
@@ -99,10 +101,10 @@ const Deal = () => {
           {/* Third rectangle div - MEHIROT */}
           <div className="flex flex-col items-center text-center">
             <div>
-              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124]  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
+              <button onClick={changeColor} onTouchStart={changeColor} id="textColor" className="bg-[#700124]/90 transition-all duration-700 cursor-pointer focus:bg-[#700124] shadow-lg shadow-black focus:shadow-2xl  w-24 h-24 lg:w-36 lg:h-32 focus:rounded-2xl">
                 <p className="text-lg md:text-xl font-bold w-full h-full flexCenter flex-col text-black">אתר <br />מכירות</p>
 
-                <div className="">
+                <div className="pt-2 md:pt-0">
                 <div className="border-b border-black md:hidden pt-1"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px]">מספר עמודים</p></div>
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4" >ללא הגבלה</p>
                   <div className="border-b border-black md:hidden"><p  className="transition-all duration-500 text-black w-full font-bold p-[1px] ">מעצב מקצועי</p></div>
@@ -117,8 +119,12 @@ const Deal = () => {
                   <div className="border-b border-black md:hidden pt-1"><p className="transition-all duration-500 text-black w-full font-bold p-[1px] ">אבטחה</p></div>
                   <p id="color1" className="transition-all duration-500 text-black w-full md:pt-4"  >גבוהה מאוד</p>
                   <div className="border-b border-black md:hidden pt-1"><p className="transition-all duration-500 text-black w-full font-bold p-[1px] ">מחיר</p></div>
-
-                  <p id="color1" className="transition-all duration-500 text-red-900 font-bold w-full  text-lg md:pt-5">מ-6000₪</p>
+                  <div className="w-full h-full">
+                    <Link href={"#contact"}>
+                    <button
+                    className="self-end text-base text-[#700124] transition-all duration-500 w-full hidden md:hidden md:pt-4 hover:scale-110">צרו איתנו קשר</button></Link>
+                    </div>
+                  
                 </div>
               </button>
             </div>
@@ -132,12 +138,13 @@ const Deal = () => {
             <div className="border-b border-black/40 w-[90%]  pt-4"><p className="text-black font-semibold text-lg">קידום אורגני</p></div>
             <div className="border-b border-black/40 w-[90%]  pt-4"><p className="text-black font-semibold text-lg">רספונסיביות</p></div>
             <div className="border-b border-black/40 w-[90%]  pt-4"><p className="text-black font-semibold text-lg">אבטחה</p></div>
-            <div className="border-b border-black/40 w-[90%]  pt-4"><p className="text-red-900 font-semibold text-lg">מחיר</p></div>
-
           </div>
         </div>
-
       </div>
+        <div className="w-full h-full flex">
+                    <span className="w-full flex justify-center pt-10"><button
+                    className="w-[35%] h-[30%]  bg-black/100 shadow-2xl shadow-black  transition-all duration-500 rounded-md border-[#700124] border-2 hover:scale-110"><Link className="" href={"#contact"}><p className="text-[#700124] flex items-center justify-center text-center text-base font-bold w-full h-full md:text-3xl">לעוד פרטים לחצו</p></Link></button></span>
+            </div>
 
 
     </section>

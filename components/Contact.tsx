@@ -30,7 +30,7 @@ const handleSubmit = (e:any) => {
     },
     body: JSON.stringify(data)
   }).then((res) => {
-    console.log('Response received')
+    console.log('Response received' + res)
     if (res.status === 200) {
       console.log('Response succeeded!')
       setSubmitted(true)
@@ -41,51 +41,9 @@ const handleSubmit = (e:any) => {
     }
   })
 }else{
-  
-  setName('You must fill this line to get us in contact')
-}
-
-const handleTouchEvent = (e: any) => {
-  e.preventDefault();
-  if(name != "" && email != "" && pnumber != "" && message != "")
-  {
-  console.log('Sending')
-  let data = {
-    name,
-    email,
-    pnumber,
-    message
-  }
-  console.log(data)
-  fetch('/api/contact', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  }).then((res) => {
-    console.log('Response received')
-    if (res.status === 200) {
-      console.log('Response succeeded!')
-      setSubmitted(true)
-      setName('')
-      setEmail('')
-      setPnumber('')
-      setMessage('')
-    }
-  })
-}else{
-  
   setName('You must fill this line to get us in contact')
 }
 }
-}
-
-  function handleTouchEvent(e: React.TouchEvent<HTMLButtonElement>) {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <section
       id="contact"
@@ -113,7 +71,7 @@ const handleTouchEvent = (e: any) => {
                       name="name"
                       autoComplete="off"
                       placeholder="שם:"
-                      className="bg-black/10 border text-black border-black/20 text-right w-[90%] lg:w-3/4 xl:w-full placeholder:text-black font-sans rounded-lg mt-4"
+                      className="w-[90%] bg-black/10 border text-black border-black/20 text-right  lg:w-3/4 xl:w-full pr-6 placeholder:text-black font-sans rounded-lg mt-4"
                       required
                     />
                   </li>
@@ -126,7 +84,7 @@ const handleTouchEvent = (e: any) => {
                       name="email"
                       autoComplete="off"
                       placeholder="אימייל:"
-                      className="bg-black/10 border text-black border-black/20 text-right w-[90%] lg:w-3/4 xl:w-full placeholder:text-black font-sans rounded-lg mt-4"
+                      className="w-[90%] bg-black/10 border text-black border-black/20 text-right  lg:w-3/4 xl:w-full pr-6 placeholder:text-black font-sans rounded-lg mt-4"
                       required
                     />
                   </li>
@@ -140,7 +98,7 @@ const handleTouchEvent = (e: any) => {
                       name="pnumber"
                       autoComplete="off"
                       placeholder="מספר טלפון:"
-                      className="bg-black/10 border text-black border-black/20 text-right w-[90%] lg:w-3/4 xl:w-full placeholder:text-black font-sans rounded-lg mt-4"
+                      className="w-[90%] bg-black/10 border text-black border-black/20 text-right  lg:w-3/4 xl:w-full pr-6 placeholder:text-black font-sans rounded-lg mt-4"
                       required
                     />
                   </li>
@@ -161,9 +119,7 @@ const handleTouchEvent = (e: any) => {
                   </li>
                 </ul>
                 <button
-                  type="submit"
-                  onClick={(e)=>{handleSubmit(e)}}
-                  onTouchStart={(e)=>{handleTouchEvent(e)}}
+                  type="submit"       
                   className="rounded-3xl p-1 bg-[#700124] border-black/30 border w-[180px] h-[40px] font-sans font-bold mt-5 mb-5 hover:opacity-90 transition-all flex items-center gap-2 text-white justify-end"
                 >
                   <p id="p">שלח</p>

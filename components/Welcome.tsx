@@ -33,20 +33,22 @@ const Welcome = () => {
            </motion.div>
 
        </div>
-       <div className="h-auto md:h-[28%] flex-col p-10 mt-14 flexCenter data gap-2">
+       <div className="h-auto md:h-[28%] flex-col p-10 mt-4 flexCenter data gap-3">
         <motion.h1 initial={{y:40, opacity:0}} transition={{ duration:1, delay:4.3 }} animate={{y:0, opacity:1}} className="text-center text-xl md:text-2xl lg:text-3xl 2xl:text-5xl font-sans font-bold p-2 text-white ">נקסט דיזיין, בניית אתרים מותאמים לעסק שלך</motion.h1>
         <h2 className="w-[25%] loading-dots text-transparent whitespace-nowrap bg-white/40 mt-4 hidden xl:flex">בניית אתרים, עיצוב אתרים, בונה אתרים, אתר לעסק, בניית אתרים, בניית אתרים, בניית אתרים, אתר לעסק בזול, אתר לבניית אתרים, אתר, ,</h2>
         <motion.h2 initial={{y:40, opacity:0}} transition={{ duration:1, delay:4.6  }} animate={{y:0, opacity:1}} className="text-center text-base md:text-lg lg:text-xl 2xl:text-3xl font-sans md:font-serif p-2 ">בניית אתרים אישיים לעסקים עם עיצוב מותאם אישית, תהליך מקצועי, שירותי אחסון ותחזוקה</motion.h2>
         <motion.h3 initial={{y:40, opacity:0}} transition={{ duration:1, delay:4.8}} animate={{y:0, opacity:1}} className="text-center text-xl font-sans md:font-serif p-2">!וכמובן שהכל מותאם לכל המכשירים הדיגיטליים</motion.h3>
-        </div>
-        <div className="w-full justify-center pt-10"><Link href={"#contact"} className="flex justify-center"><button className="flex lg:hidden p-4 text-lg border-[2px] border-white/50 hover:bg-white hover:text-[#700124] transition-all duration-300 ease-linear">צרו איתנו קשר</button></Link></div>
-       <div className="w-[80%] justify-center items-center self-center flex-col hidden md:flex">
-       <div className="mt-14">
-       <Link href="#about" className="bg-transparent hover:scale-125 transition-all duration-700 md:hidden lg:flex">
+       <motion.div initial={{y:40, opacity:0}} transition={{ duration:1, delay:4.8}} animate={{y:0, opacity:1}}><Link href="#about" className="bg-transparent hover:scale-125 transition-all duration-700 md:hidden lg:flex">
             <Image src="/arrow.png" alt="ScrollArrow" width={50} height={50} className="animate-bounce hover:animate-none hidden md:flex"/>
           </Link>
+          </motion.div>
+        </div>
+        <div className="w-full justify-center pt-10">
+          <Link href={"#contact"} className="flex justify-center">
+          <button className="flex lg:hidden p-4 text-lg border-[2px] border-white/50 hover:bg-white hover:text-[#700124] transition-all duration-300 ease-linear">צרו איתנו קשר</button>
+          </Link>
           </div>
-          </div>
+
         </main>    
     </>
   );

@@ -37,7 +37,7 @@ const IntroProject = () => {
           <div 
           className="hidden md:flex w-full justify-end absolute top-[250px]">
           <div data-aos="fade-right" className="flex flex-row w-[60%] lg:w-[80%] xl:w-[65%] h-[350px] justify-center gap-10 bg-[#700124] shadow-2xl shadow-black/70 rounded-r-xl">
-          <div className="flex flex-col w-2/4 md:w-3/4 lg:w-2/4 p-10 md:gap-3 gap-5 lg:gap-5">
+          <div className="flex flex-col flexCenter w-2/4 md:w-3/4 lg:w-2/4 p-10 md:gap-3 gap-5 lg:gap-5">
             <h2 className="flex text-5xl md:text-xl">הפרוייקטים שלנו מגובים על ידי מפתחי האינטרנט והתוכנה המובילים בשוק</h2>
             <p className="flex text-lg md:text-base text-[#FFFFFFB3] ">התחלנו את המסע שלנו עם חזון להעצים את כל<br/> העסקים עם טכנולוגיה חדשנית ופתרונות דיגיטליים,<br/> המועברים על ידי צוות מפתחי האינטרנט המנוסה ביותר.</p>
             <div className="flex flex-row gap-5 justify-center items-center">

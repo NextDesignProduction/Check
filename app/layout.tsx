@@ -16,8 +16,11 @@ import Red from '@/components/Red'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'WebDesign',
+  title: 'נקסט דיזיין - בניית אתרים',
   description: 'אתר לבניית אתרים',
+  icons:{
+    icon:"/color_black.png",
+  },
 }
 
 export default function RootLayout({

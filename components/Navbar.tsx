@@ -35,6 +35,9 @@ const Navbar = () => {
               <li className="hover-navbuttonIG grayscale-0 hover:animate-bounce transition">
               <Link href=""><Image src="/icon/instagram.png" width={50} height={50} alt="IG" className=""  /></Link>
               </li>
+              <li className="hover-navbuttonIG grayscale-0 hover:animate-bounce transition">
+              <Link href="https://www.tiktok.com/@nextdesignwebs"><Image src="/icon/tiktok.png" width={40} height={40} alt="IG" className=""/></Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-auto md:flex lg:flex xl:flex NavLinkC">

@@ -1,11 +1,6 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.Merrie{
-  font-family: 'Cabin', sans-serif;
-  font-weight: 900;
-}
 
 .flexCenter {
   @apply flex justify-center items-center;
@@ -21,6 +16,12 @@
 .flexEnd{
   @apply flex justify-end;
 }
+
+.Merrie{
+  font-family: 'Cabin', sans-serif;
+  font-weight: 900;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -47,7 +48,7 @@ nav{
 @media only screen and (max-width: 428px){
   .nav{
     height: 80px !important;
-    z-index: 998;
+    z-index: 999;
   }
 }
 
@@ -252,7 +253,7 @@ border: 2px solid transparent;
     list-style: inside !important;
   }
 
-  form div{
+  /* form div{
     @apply flex flex-col gap-2;
   }
   form input{
@@ -261,7 +262,7 @@ border: 2px solid transparent;
 
   fieldset input{
     @apply shadow-none;
-  }
+  } */
 
 section div .mx-0 {
   margin-left: 0px;
@@ -1089,16 +1090,16 @@ left: 95%;  opacity: 0;
 	.containers{
     position: absolute;
     top: 25%;
-    left: 52%;
-    transform: translate(-65%, -45%);
+    left: 48%;
+    transform: translate(-60%, -45%);
     width: 95%;
-    height: 30%;
+    height: 32%;
     background:transparent;
     border-radius: 10px;
     box-shadow: 0 20px 20px #000;
   }
   .containers .sliders .items{
-    width: 310px;
+    width: 330px;
     height: 160px;
     position: absolute;
     top: 50%;
@@ -1122,18 +1123,18 @@ left: 95%;  opacity: 0;
     height: 90%;
   }
   .sliders .items:nth-child(3){
-    left: 21%;
+    left: 16%;
     top:130%;
   }
   .sliders .items:nth-child(4){
-    top:calc(90% + 115px);
-  left: 21%;}
+    top:calc(90% + 135px);
+  left: 16%;}
   .sliders .items:nth-child(5){
-    top: calc(90% + 150px);
-  left: 21%;}
+    top: calc(90% + 190px);
+  left: 16%;}
   .sliders .items:nth-child(n + 6){
     top: calc(90% + 190px);
-  left: 21%;  opacity: 0;
+  left: 16%;  opacity: 0;
   }
   
   
@@ -1243,8 +1244,8 @@ left: 95%;  opacity: 0;
     box-shadow: 0 20px 20px #000;
   }
   .containers .sliders .items{
-    width: 320px;
-    height: 140px;
+    width: 360px;
+    height: 160px;
     position: absolute;
     top: 50%;
     transform: translate(0,0);
@@ -1267,18 +1268,18 @@ left: 95%;  opacity: 0;
     height: 100%;
   }
   .sliders .items:nth-child(3){
-    left: 22%;
+    left: 19%;
     top:130%;
   }
   .sliders .items:nth-child(4){
-    top:calc(100% + 115px);
-  left: 22%;}
+    top:calc(100% + 120px);
+  left: 19%;}
   .sliders .items:nth-child(5){
-    top: calc(100% + 150px);
-  left: 22%;}
+    top: calc(100% + 180px);
+  left: 19%;}
   .sliders .items:nth-child(n + 6){
     top: calc(100% + 190px);
-  left: 22%;  opacity: 0;
+  left: 19%;  opacity: 0;
   }
   
   
